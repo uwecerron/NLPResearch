@@ -8,13 +8,13 @@ public class Main {
 
 	
 	public static void main(String []args) throws IOException{
-		 String path="/home/user/Desktop/workspace/TopicPredictor/src/news/inputNews.txt";
-		 String stopwords="/home/user/Desktop/workspace/TopicPredictor/src/stopwords/stopword.txt";
+		 String path="/home/user/Desktop/workspace/NLPResearch/src/news/inputNews.txt";
+		 String stopwords="/home/user/Desktop/workspace/NLPResearch/src/stopwords/stopword.txt";
 		 
 	try{
 		ReadFile file = new ReadFile(path);
 		//get news
-		HashMap<Integer,ArrayList<String>> news=file.getNews();
+		HashMap<Integer,ArrayList<String>> news=file.getNews("/home/user/Desktop/workspace/NLPResearch/src/news/");
 		// System.out.println(news.get(0));
 	        
 		ReadFile stop= new ReadFile(stopwords);		

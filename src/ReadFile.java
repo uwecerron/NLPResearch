@@ -87,8 +87,8 @@ public class ReadFile {
 	}
 	
 	
-	public HashMap<Integer,ArrayList<String>> getNews() throws IOException{
-		File folder = new File("/home/user/Desktop/workspace/TopicPredictor/src/news/");
+	public HashMap<Integer,ArrayList<String>> getNews(String lenews) throws IOException{
+		File folder = new File(lenews);
 		File[] listOfFiles = folder.listFiles();
 		HashMap<Integer,ArrayList<String>>  documents= new HashMap<Integer,ArrayList<String>>();
 
